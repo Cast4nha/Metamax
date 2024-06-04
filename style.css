@@ -17,7 +17,7 @@
     --overlay-color: rgba(0, 0, 0, 0.2);
     /* --hero-img-gradients: linear-gradient(213.55deg, #8ACEFF 11.56%, rgba(110, 174, 228, 0) 63.58%); */
     --hero-img-gradients: linear-gradient(213.55deg, #8ACEFF 11.56%, rgba(110, 174, 228, 0) 63.58%);
-
+    --btn-color-teste: #d66813;
     --background-diagonal-gradients: linear-gradient(238.86deg, #6EAEE4 14.38%, rgba(110, 174, 228, 0) 75.41%);
     --background-gradients: linear-gradient(180deg, #6EAEE4 14.38%, rgba(110, 174, 228, 0) 75.41%);
     --white-color: #fff;
@@ -94,13 +94,13 @@ body{
 }
 
 .hero-heading{
-    font-size: 3.75rem;
+    font-size: 3.60rem;
     font-weight: 400;
     line-height: 5.5rem;
 }
 
 .hero-heading span{
-    color: var(--primary-color);
+    color: var(--cor-teste);
 }
 
 .hero-paragraph{
@@ -121,14 +121,14 @@ body{
 }
 
 .primary-btn{
-    background: var(--primary-color);
+    background: var(--btn-color-teste);
     color: var(--secondary-text-color);
 }
 
 .secondary-btn{
     background: transparent;
-    color: var(--primary-color);
-    border: .1rem solid var(--primary-color);
+    color: var(--btn-color-teste);
+    border: .1rem solid var(--btn-color-teste);
 }
 
 /* hero section image container */
@@ -600,7 +600,7 @@ section{
 }
 
 .contact-us-img-container::after{
-    content: 'Contact Us. We can’t wait to work with you and grow your business.';
+    content: 'Preencha o formulário para que possamos fornecer um orçamento personalizado para suas passagens aéreas!';
     position: absolute;
     bottom: -2rem;
     padding: 2rem;
@@ -632,7 +632,7 @@ section{
 }
 
 .contact-us{
-    width: 100%;
+    width: 40%;
     min-width: 350px;
 }
 
@@ -647,7 +647,7 @@ section{
 input, textarea{
     display: block;
     width: 100%;
-    height: 3.5rem;
+    height: 2.5rem;
     border: none;
     padding: 1rem 1.5rem;
     outline: none;
@@ -659,7 +659,7 @@ input, textarea{
 textarea{
     font-family: 'Lexend', sans-serif;
     resize: none;
-    height: 20rem;
+    height: 8rem;
     font-weight: 300;
 }
 
@@ -679,8 +679,8 @@ textarea{
 }
 
 .company-info .logo{
-    height: 10rem;
-    margin-bottom: 2rem;
+    height: 9.5rem;
+    margin-bottom: rem;
 }
 
 .social-links{
