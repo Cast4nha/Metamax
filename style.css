@@ -32,7 +32,7 @@ html {
 
 body {
     color: var(--primary-text-color);
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
 }
@@ -681,13 +681,14 @@ textarea {
 }
 
 .company-info .logo {
-    height: 9.5rem;
-    margin-bottom: rem;
+    height: 5.5rem;
+    padding-left: 20rem;
 }
 
 .social-links {
     display: flex;
     gap: 1rem;
+    padding-left: 19rem;
 }
 
 .social-links a {
@@ -1089,4 +1090,15 @@ textarea {
         grid-template-columns: 1fr;
     }
 
+}
+
+#carousel-section {
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carousel-item img, .carousel-item video {
+    max-height: 500px;
+    object-fit: cover;
 }
