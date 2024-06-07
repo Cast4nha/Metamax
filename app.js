@@ -22,6 +22,27 @@ faqs.map( faq => {
 
 })
 
+function SendMail(event) {
+    event.preventDefault(); // Previne o envio padrão do formulário
 
+    var params = {
+        from_name: document.getElementById("nome").value,
+        email: document.getElementById("email").value,
+        telefone: document.getElementById("telefone").value,
+        origem: document.getElementById("origem").value,
+        destino: document.getElementById("destino").value,
+        data_ida: document.getElementById("data_ida").value,
+        data_volta: document.getElementById("data_volta").value,
+        passageiros: document.getElementById("passageiros").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_r9q1tr7", "template_opogtff", params)
+        .then(function(response) {
+            alert('Mensagem enviada com sucesso!', response.status, response.text);
+        }, function(error) {
+            alert('Ocorreu um erro ao enviar a mensagem:', error);
+        });
+}
 
 AOS.init();

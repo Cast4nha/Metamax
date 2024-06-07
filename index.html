@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/Meta-Max-Agência-de-Viagens--400x">
-    <link rel="shortcut icon" href="favicon.ico" type="image/Meta-Max-Agência-de-Viagens--400x">
+    <link rel="shortcut icon" href="img/Meta-Max-Agência-de-Viagens-242x66px.png" type="image/Meta-Max-Agência-de-Viagens--400x">
     <title>Metamax</title>
 
     <!-- Google Fonts CDN -->
@@ -23,6 +22,30 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="./style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "UJHuWrAS4Tom1_0B2",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 
 </head>
 
@@ -94,81 +117,6 @@
         </main>
 
     </header>
-
-    <!-- brand sections -->
-
-    <section class="brands-section">
-        <!-- <p class="section-secondary-line">Trabalhamos com as principais companhias aéreas</p> -->
-        <p class="section-title">Trabalhamos com as principais companhias aéreas</p>
-
-        <div class="brands-container">
-            <div class="brand"><img src="img/azuk(1).png" class="brand-img" alt=""></div>
-            <div class="brand"><img src="img/latam(1).png" class="brand-img" alt=""></div>
-            <div class="brand"><img src="img/Gol(1).png" class="brand-img" alt=""></div>
-            <div class="brand"><img src="img/american-airlines(1).png" class="brand-img" alt=""></div>
-            <div class="brand"><img src="img/tap(1).png" class="brand-img" alt=""></div>
-            <!-- <div class="brand"><img src="img/google.png" class="brand-img" alt=""></div>
-            <div class="brand"><img src="img/amazon.png" class="brand-img" alt=""></div>
-            <div class="brand"><img src="img/facebook.png" class="brand-img" alt=""></div>
-            <div class="brand"><img src="img/apple.png" class="brand-img" alt=""></div> -->
-        </div>
-    </section>
-
-    <!-- about section -->
-
-    <!-- <section id="about-section"> -->
-    <!-- about section img container -->
-    <!-- <div class="about-us-img-container">
-            <div class="about-us-img" data-aos="expand">
-                <img src="img/about.png" data-aos="zoom-out" data-aos-delay="250" alt="">
-            </div>
-
-            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="250"><img
-                    src="img/instagram.png" alt=""></a>
-            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="300"><img
-                    src="img/facebook.png" alt=""></a>
-            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="350"><img
-                    src="img/twitter.png" alt=""></a>
-            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="400"><img
-                    src="img/youtube.png" alt=""></a>
-
-        </div> -->
-
-    <!-- about us -->
-    <!-- <div class="about-us">
-            <p class="section-secondary-line">Target the right audience and</p>
-            <h3 class="section-title">Grow your business with us</h3>
-
-            <div class="benefit-card">
-                <div class="card-img">
-                    <img src="img/grow.png" alt="">
-                </div>
-                <p class="card-name">Get more traffic</p>
-            </div>
-
-            <div class="benefit-card">
-                <div class="card-img">
-                    <img src="img/audience.png" alt="">
-                </div>
-                <p class="card-name">Connect with your audience</p>
-            </div>
-
-            <div class="benefit-card">
-                <div class="card-img">
-                    <img src="img/sell.png" alt="">
-                </div>
-                <p class="card-name">Sell your product to right audience</p>
-            </div>
-
-            <div class="benefit-card">
-                <div class="card-img">
-                    <img src="img/relation.png" alt="">
-                </div>
-                <p class="card-name">Build a strong relation </p>
-            </div>
-        </div> -->
-
-    </section>
 
     <!-- services section -->
 
@@ -249,6 +197,106 @@
 
     </section>
 
+
+    <!-- brand sections -->
+
+    <section class="brands-section">
+        <!-- <p class="section-secondary-line">Trabalhamos com as principais companhias aéreas</p> -->
+        <p class="section-title">Trabalhamos com as principais companhias aéreas</p>
+
+        <div class="brands-container">
+            <div class="brand"><img src="img/azuk(1).png" class="brand-img" alt=""></div>
+            <div class="brand"><img src="img/latam(1).png" class="brand-img" alt=""></div>
+            <div class="brand"><img src="img/Gol(1).png" class="brand-img" alt=""></div>
+            <div class="brand"><img src="img/american-airlines(1).png" class="brand-img" alt=""></div>
+            <div class="brand"><img src="img/tap(1).png" class="brand-img" alt=""></div>
+            <!-- <div class="brand"><img src="img/google.png" class="brand-img" alt=""></div>
+            <div class="brand"><img src="img/amazon.png" class="brand-img" alt=""></div>
+            <div class="brand"><img src="img/facebook.png" class="brand-img" alt=""></div>
+            <div class="brand"><img src="img/apple.png" class="brand-img" alt=""></div> -->
+        </div>
+    </section>
+
+    <!-- about section -->
+
+    <!-- <section id="about-section"> -->
+    <!-- about section img container -->
+    <!-- <div class="about-us-img-container">
+            <div class="about-us-img" data-aos="expand">
+                <img src="img/about.png" data-aos="zoom-out" data-aos-delay="250" alt="">
+            </div>
+
+            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="250"><img
+                    src="img/instagram.png" alt=""></a>
+            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="300"><img
+                    src="img/facebook.png" alt=""></a>
+            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="350"><img
+                    src="img/twitter.png" alt=""></a>
+            <a href="#" class="about-img-social-link" data-aos="zoom-in-up" data-aos-delay="400"><img
+                    src="img/youtube.png" alt=""></a>
+
+        </div> -->
+
+    <!-- about us -->
+    <!-- <div class="about-us">
+            <p class="section-secondary-line">Target the right audience and</p>
+            <h3 class="section-title">Grow your business with us</h3>
+
+            <div class="benefit-card">
+                <div class="card-img">
+                    <img src="img/grow.png" alt="">
+                </div>
+                <p class="card-name">Get more traffic</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="card-img">
+                    <img src="img/audience.png" alt="">
+                </div>
+                <p class="card-name">Connect with your audience</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="card-img">
+                    <img src="img/sell.png" alt="">
+                </div>
+                <p class="card-name">Sell your product to right audience</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="card-img">
+                    <img src="img/relation.png" alt="">
+                </div>
+                <p class="card-name">Build a strong relation </p>
+            </div>
+        </div> -->
+
+    </section>
+
+    <!-- YouTube Videos Section -->
+<section id="videos-section">
+    <h3 class="section-title">Confira nossos vídeos</h3>
+    <p class="section-secondary-line">Assista aos nossos conteúdos e fique por dentro das novidades!</p>
+
+    <div class="videos-container">
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CRR3cJE2J5E" title="7 LUGARES BARATOS pra VIAJAR no BRASIL em 2024 (com preços)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <p class="video-title">Título do Vídeo 1</p>
+        </div>
+
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="video-title">Título do Vídeo 2</p>
+        </div>
+
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID_3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="video-title">Título do Vídeo 3</p>
+        </div>
+    </div>
+</section>
+
+
+    
 
     
     <!-- faqs -->
@@ -343,25 +391,26 @@
         </div>
 
         <!-- contact us form -->
-
         <div class="contact-us">
             <h3 class="section-title">Estamos aqui para ajudar! Entre em contato conosco</h3>
-
-            <form class="contact-form">
-                <input type="text" required placeholder="Nome completo" name="nome">
-                <input type="email" required placeholder="Email" name="email">
-                <input type="text" required placeholder="Telefone" name="telefone">
-                <input type="text" required placeholder="Destino" name="destino">
+    
+            <form class="contact-form" onsubmit="SendMail(event)">
+                <input type="text" id="nome" required placeholder="Nome completo" name="nome">
+                <input type="email" id="email" required placeholder="Email" name="email">
+                <input type="text" id="telefone" required placeholder="Telefone" name="telefone">
+                <input type="text" id="origem" required placeholder="Origem" name="origem">
+                <input type="text" id="destino" required placeholder="Destino" name="destino">
                 <label for="ida">Data de ida:</label>
-                <input type="date" required placeholder="dd/mm/aaaa" name="ida">
+                <input id="data_ida" type="date" required placeholder="dd/mm/aaaa" name="ida">
                 <label for="volta">Data de volta:</label>
-                <input type="date" required placeholder="dd/mm/aaaa" name="volta">
-                <input type="number" required placeholder="Número de passageiros" name="numero-passageiros" min="2">
-                <textarea name="body" placeholder="Comentários adicionais" required></textarea>
-
+                <input id="data_volta" type="date" required placeholder="dd/mm/aaaa" name="volta">
+                <input id="passageiros" type="number" required placeholder="Número de passageiros" name="numero-passageiros" min="1">
+                <textarea id="message" name="body" placeholder="Comentários adicionais" required></textarea>
+    
                 <button type="submit" class="btn primary-btn">Enviar</button>
             </form>
         </div>
+    
 
     </section>
 
