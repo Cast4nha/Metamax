@@ -683,19 +683,21 @@ textarea {
 
 .company-info .logo {
     height: 9rem;
-    padding-right: 4rem;
+    padding-right: 2rem;
+    
 }
 
 .social-links {
     display: flex;
     gap: 1rem;
     padding-left: 1rem;
+    padding-top: 3rem;
 }
 
 .social-links a {
     width: 2.5rem;
     height: 2.5rem;
-    padding: .5rem;
+    padding: rem; 
     border-radius: 100%;
     background: var(--lighter-accent-color);
 }

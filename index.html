@@ -25,16 +25,16 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-              publicKey: "UJHuWrAS4Tom1_0B2",
+                publicKey: "UJHuWrAS4Tom1_0B2",
             });
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
@@ -85,7 +85,8 @@
 
                 <!-- action buttons -->
                 <div class="hero-action-buttons">
-                    <a href="https://wa.me/556299031434?text=Olá,%20estou%20vindo%20através%20do%20site,%20gostaria%20de%20mais%20informações." class="btn primary-btn" target="_blank">Fale Conosco via Whatsapp</a>
+                    <a href="https://wa.me/556299031434?text=Olá,%20estou%20vindo%20através%20do%20site,%20gostaria%20de%20mais%20informações."
+                        class="btn primary-btn" target="_blank">Fale Conosco via Whatsapp</a>
                 </div>
             </div>
 
@@ -273,31 +274,39 @@
     </section>
 
     <!-- YouTube Videos Section -->
-<section id="videos-section">
-    <h3 class="section-title">Confira nossos vídeos</h3>
-    <p class="section-secondary-line">Assista aos nossos conteúdos e fique por dentro das novidades!</p>
+    <section id="videos-section">
+        <h3 class="section-title">Confira nossos vídeos</h3>
+        <p class="section-secondary-line">Assista aos nossos conteúdos e fique por dentro das novidades!</p>
 
-    <div class="videos-container">
-        <div class="video-card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CRR3cJE2J5E" title="7 LUGARES BARATOS pra VIAJAR no BRASIL em 2024 (com preços)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <p class="video-title">Título do Vídeo 1</p>
+        <div class="videos-container">
+            <div class="video-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CRR3cJE2J5E"
+                    title="7 LUGARES BARATOS pra VIAJAR no BRASIL em 2024 (com preços)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="video-title">Título do Vídeo 1</p>
+            </div>
+
+            <div class="video-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID_2" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p class="video-title">Título do Vídeo 2</p>
+            </div>
+
+            <div class="video-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID_3" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p class="video-title">Título do Vídeo 3</p>
+            </div>
         </div>
-
-        <div class="video-card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-title">Título do Vídeo 2</p>
-        </div>
-
-        <div class="video-card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID_3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-title">Título do Vídeo 3</p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-    
 
-    
+
+
     <!-- faqs -->
 
     <section id="faq-section">
@@ -370,7 +379,7 @@
         <!-- contact section image container -->
 
         <div class="contact-us-img-container">
-            <img src="./img/Flávia Meta Max.png" data-aos="zoom-out" class="contact-us-img"  alt="">
+            <img src="./img/Flávia Meta Max.png" data-aos="zoom-out" class="contact-us-img" alt="">
 
             <a href="#" class="contact-img-social-link" data-aos="zoom-in-up" data-aos-delay="250">
                 <img src="img/instagram.png" alt="">
@@ -380,7 +389,8 @@
                 <img src="img/facebook.png" alt="">
             </a>
 
-            <a  href="https://wa.me/556299031434?text=Olá,%20estou%20vindo%20através%20do%20site,%20gostaria%20de%20mais%20informações." class="contact-img-social-link" data-aos="zoom-in-up" data-aos-delay="350" target="_blank">
+            <a href="https://wa.me/556299031434?text=Olá,%20estou%20vindo%20através%20do%20site,%20gostaria%20de%20mais%20informações."
+                class="contact-img-social-link" data-aos="zoom-in-up" data-aos-delay="350" target="_blank">
                 <img src="./img/Wpp-120x120.png" alt="">
             </a>
 
@@ -402,13 +412,14 @@
                 <input id="data_ida" type="date" required placeholder="dd/mm/aaaa" name="ida">
                 <label for="volta">Data de volta:</label>
                 <input id="data_volta" type="date" required placeholder="dd/mm/aaaa" name="volta">
-                <input id="passageiros" type="number" required placeholder="Número de passageiros" name="numero-passageiros" min="1">
+                <input id="passageiros" type="number" required placeholder="Número de passageiros"
+                    name="numero-passageiros" min="1">
                 <textarea id="message" name="body" placeholder="Comentários adicionais" required></textarea>
-    
+
                 <button type="submit" class="btn primary-btn">Enviar</button>
             </form>
         </div>
-    
+
 
     </section>
 
@@ -416,35 +427,36 @@
     <!-- footer -->
 
     <footer id="footer">
-            <div class="contact footer-links-container">
+        <div class="contact footer-links-container">
             <h5 class="footer-links-title">Entre em contato</h5>
             <p class="footer-text">Rua 15 C, Quadra 102 Lote 31, Setor Garavelo, Aparecida de goiania, Goiás</p>
             <p class="footer-text">Telefone: (62) 9903-1434</p>
             <p class="footer-text">Email: metamaxagencialtda@gmail.com</p>
         </div>
-
-        <!-- <div class="social-links">
-            <h5 class="footer-links-title">Siga-nos nas redes sociais</h5>
-            <a href="#"><img src="img/instagram.png" alt=""></a>
+        </div>
+        <div class="social-links">
+            <!-- <h5 class="footer-links-title">Siga-nos nas redes sociais</h5> -->
+            <a href="https://www.instagram.com/metamaxviagens/" target="_blank"><img src="img/instagram.png" alt=""></a>
             <a href="#"><img src="img/facebook.png" alt=""></a>
-            <a href="https://wa.me/556299031434?text=Olá,%20estou%20vindo%20através%20do%20site,%20gostaria%20de%20mais%20informações." target="_blank"><img src="img/vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930746.png" alt=""></a>
+            <a href="https://wa.me/556299031434?text=Olá,%20estou%20vindo%20através%20do%20site,%20gostaria%20de%20mais%20informações." target="_blank"><img src="./img/Wpp-120x120.png" alt=""></a>
             <a href="#"><img src="img/youtube.png" alt=""></a>
-        </div> -->
-        <div class="company-info">
-            <img src="img/Meta-Max-Agência-de-Viagens--400x.png" class="logo" alt="">
         </div>
 
-        <!-- <div class="information footer-links-container"> -->
+        <div class="company-info">
+            <img src="img/Meta-Max-Agência-de-Viagens--400x.png" class="logo" alt="">
+
+
+            <!-- <div class="information footer-links-container"> -->
             <!-- <h5 class="footer-links-title">Informações</h5> -->
             <!-- <a href="#" class="footer-links">Sobre nós</a> -->
             <!-- <a href="#" class="footer-links">Privacy Policy</a> -->
             <!-- <a href="#" class="footer-links">Terms & Conditions</a> -->
             <!-- <a href="#" class="footer-links">What info we collect ?</a> -->
-        <!-- </div> -->
+            <!-- </div> -->
 
-  
 
-        <!-- <p class="copyright">Designed & 👨‍💻 by Hartzen</p> -->
+
+            <!-- <p class="copyright">Designed & 👨‍💻 by Hartzen</p> -->
 
     </footer>
 
