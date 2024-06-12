@@ -718,7 +718,7 @@ textarea {
 }
 
 .footer-links-title {
-    text-transform: capitalize;
+
     margin-bottom: 1rem;
 }
 
@@ -728,7 +728,6 @@ textarea {
     text-decoration: none;
     margin-bottom: .5rem;
     display: block;
-    text-transform: capitalize;
 }
 
 .footer-text {
@@ -1123,14 +1122,16 @@ textarea {
 }
 
 .video-card {
-    flex: 1 1 calc(50% - 20px); /* Ajuste de flex-basis para responsividade */
+    flex: 1 1 calc(33.333% - 20px);
     max-width: 560px;
     margin-bottom: 20px;
+    box-sizing: border-box; /* Adiciona box-sizing para incluir padding e border no cálculo de largura */
 }
 
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
     overflow: hidden;
 }
 
